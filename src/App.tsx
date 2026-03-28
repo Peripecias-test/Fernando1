@@ -56,14 +56,14 @@ const Navbar = () => {
             <img 
               src={scrolled || !isHome ? "https://lh3.googleusercontent.com/d/1kKDpIoP3DaVf9JgE7L1LO7NlRfD6MVDa" : "https://lh3.googleusercontent.com/d/1A230k5kHxz0uDxii-PnYf1iM5rBQajpl"} 
               alt="Nexxor Controle e Automação" 
-              className={`${(scrolled && isHome) ? 'h-28 sm:h-36 md:h-48' : 'h-24 sm:h-32 md:h-40'} w-auto object-contain transition-all duration-300`}
+              className={`${(scrolled && isHome) ? 'h-20 sm:h-24 md:h-32' : 'h-16 sm:h-20 md:h-28'} w-auto object-contain transition-all duration-300`}
               referrerPolicy="no-referrer"
             />
           </Link>
           
           {/* Desktop Menu */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-4 lg:ml-10 flex items-baseline space-x-4 lg:space-x-8">
               {navLinks.map((link) => (
                 link.href.startsWith('#') || (link.href.startsWith('/') && link.href.includes('#')) ? (
                   <a
@@ -161,7 +161,7 @@ const Navbar = () => {
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen md:h-screen flex items-center overflow-hidden py-20 md:py-0">
+    <section className="relative min-h-screen flex items-center overflow-hidden py-20">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -173,7 +173,7 @@ const Hero = () => {
         <div className="absolute inset-0 bg-blue-900/60 backdrop-blur-[2px]"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-0">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 md:pt-32">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -183,7 +183,7 @@ const Hero = () => {
           <span className="inline-block py-1 px-3 rounded-full bg-orange-500/20 border border-orange-500/30 text-orange-400 text-xs font-bold uppercase tracking-wider mb-6">
             Especialistas em Painéis Elétricos
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6 font-display">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-6 font-display">
             Especialista em <span className="text-orange-500">Automação Industrial,</span> <span className="text-white">painéis elétricos e infraestrutura elétrica</span>
           </h1>
           <p className="text-base md:text-xl text-white/80 mb-10 leading-relaxed font-sans">
@@ -210,7 +210,7 @@ const Hero = () => {
       </div>
 
       {/* Stats Overlay */}
-      <div className="absolute bottom-0 left-0 w-full bg-white/5 backdrop-blur-sm border-t border-white/10 py-8 hidden lg:block">
+      <div className="absolute bottom-0 left-0 w-full bg-white/5 backdrop-blur-sm border-t border-white/10 py-4 hidden xl:block">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           {[
             { label: 'Anos de Experiência', value: '+12' },
@@ -315,7 +315,7 @@ const Suppliers = () => {
             <img 
               src="https://tse2.mm.bing.net/th/id/OIP.ZtjeiBK6sTu2IhqEZjxq4AHaFL?rs=1&pid=ImgDetMain&o=7&rm=3" 
               alt="WEG Logo" 
-              className="h-10 md:h-20 w-auto transition-all duration-500"
+              className="h-10 sm:h-14 md:h-20 w-auto transition-all duration-500"
               referrerPolicy="no-referrer"
             />
           </div>
@@ -323,7 +323,7 @@ const Suppliers = () => {
             <img 
               src="https://logos-world.net/wp-content/uploads/2020/11/Siemens-Logo.png" 
               alt="Siemens Logo" 
-              className="h-10 md:h-20 w-auto transition-all duration-500"
+              className="h-10 sm:h-14 md:h-20 w-auto transition-all duration-500"
               referrerPolicy="no-referrer"
             />
           </div>
@@ -331,7 +331,7 @@ const Suppliers = () => {
             <img 
               src="https://companieslogo.com/img/orig/SU.PA_BIG-8cd10b23.png?t=1648148280" 
               alt="schneider Logo" 
-              className="h-10 md:h-20 w-auto transition-all duration-500"
+              className="h-10 sm:h-14 md:h-20 w-auto transition-all duration-500"
               referrerPolicy="no-referrer"
             />
           </div>
@@ -339,7 +339,7 @@ const Suppliers = () => {
             <img 
               src="https://skmtech.com.br/wp-content/uploads/2019/11/Altus-Logo-Novo.png" 
               alt="Altus Logo" 
-              className="h-10 md:h-20 w-auto transition-all duration-500"
+              className="h-10 sm:h-14 md:h-20 w-auto transition-all duration-500"
               referrerPolicy="no-referrer"
             />
           </div>
@@ -347,7 +347,7 @@ const Suppliers = () => {
             <img 
               src="https://vectorseek.com/wp-content/uploads/2023/09/Phoenix-Contact-Logo-Vector.svg-.png" 
               alt="Phoenix Logo" 
-              className="h-10 md:h-20 w-auto transition-all duration-500"
+              className="h-10 sm:h-14 md:h-20 w-auto transition-all duration-500"
               referrerPolicy="no-referrer"
             />
           </div>
@@ -355,7 +355,7 @@ const Suppliers = () => {
             <img 
               src="https://th.bing.com/th/id/R.81b5fdece0d37ee9632550ac23225be7?rik=RdQi4isyJpSDaQ&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2017%2f03%2fabb_logo.png&ehk=TbDcOOCf1sGqYke8%2f88adthDu5cI7ltARcZPmYVGezw%3d&risl=&pid=ImgRaw&r=0" 
               alt="ABB Logo" 
-              className="h-10 md:h-20 w-auto transition-all duration-500"
+              className="h-10 sm:h-14 md:h-20 w-auto transition-all duration-500"
               referrerPolicy="no-referrer"
             />
           </div>
