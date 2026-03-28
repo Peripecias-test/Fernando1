@@ -56,7 +56,7 @@ const Navbar = () => {
             <img 
               src={scrolled || !isHome ? "https://lh3.googleusercontent.com/d/1kKDpIoP3DaVf9JgE7L1LO7NlRfD6MVDa" : "https://lh3.googleusercontent.com/d/1A230k5kHxz0uDxii-PnYf1iM5rBQajpl"} 
               alt="Nexxor Controle e Automação" 
-              className={`${(scrolled && isHome) ? 'h-20 md:h-48' : 'h-16 md:h-40'} w-auto object-contain transition-all duration-300`}
+              className={`${(scrolled && isHome) ? 'h-28 sm:h-36 md:h-48' : 'h-24 sm:h-32 md:h-40'} w-auto object-contain transition-all duration-300`}
               referrerPolicy="no-referrer"
             />
           </Link>
